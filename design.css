@@ -5,21 +5,21 @@ p, h1 {
 	display: inline;
 }
 
-#title { 
+.title { 
 	font-weight: 800;
 	font-size: 20px;
 }
 
-#name {
+.name {
 	font-weight: 700;
 }
 
-#username {
-	color: #d3d3d3;
+.username {
+	color: #A9A9A9;
 	font-weight: 200;
 }
 
-#topBar, #bottomBar {
+.bar {
 	height: 55px;
 }
 
@@ -27,7 +27,7 @@ p, h1 {
 	margin-bottom: 55px;
 }
 
-#tweet {
+#tweet, #search {
     border: none;
     overflow: auto;
     outline: none;
@@ -47,8 +47,12 @@ p, h1 {
 	padding: 0;
 }
 
-#side {
+#side, #trendingSide {
 	flex-direction: column;
+}
+
+#trendingBox {
+	border-radius: 20px;
 }
 
 #profButton {
@@ -66,11 +70,15 @@ p, h1 {
     font-weight: 600;
 }
 
+#search-group {
+	border-radius: 20px;
+}
 /*Changes margin when media is small*/
 @media (min-width: 576px) {
 	#middleCol {
 		margin-left: 16%;
-		margin-bottom: 0%;
+		margin-right: 0%;
+		margin-bottom: 0px;
 		min-height: 100vh;
 		z-index: 1;
 	}
@@ -78,4 +86,17 @@ p, h1 {
 	#feed {
 		margin-bottom: 0%;
 	}
+}
+
+@media (min-width: 992px) {
+	#middleCol {
+		margin-left: 8%;
+		padding: 0px;
+	}
+
+	#trendingSide {
+		position: sticky;
+		right: 0%;
+	}
+
 }
