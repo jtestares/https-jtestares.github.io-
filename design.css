@@ -1,0 +1,33 @@
+p, h1 {
+	font-family: "Helvetica"; 
+	font-size: 14px;
+	color: black;
+	display: inline;
+}
+
+#title { 
+	font-weight: 800;
+	font-size: 20px;
+}
+
+#name {
+	font-weight: 700;
+}
+
+#username {
+	color: #d3d3d3;
+	font-weight: 200;
+}
+
+#topBar {
+	height: 55px;
+}
+
+#bottomBar {
+	height: 55px;
+}
+
+.container-fluid {
+	padding: 0px;
+	margin: 0px;
+}
