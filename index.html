@@ -18,24 +18,67 @@
 		<div class="d-flex p-0 mt-0">
 
 			<!-- SIDEBAR -->
-			<div class="col-sm-2 col-md-2 col-lg-1 p-0 position-fixed h-100 d-none d-sm-flex justify-content-end" id="sideBar">
-				<div class="d-flex " id="side">
-					<button class="btn mt-3 mb-2"><img src="icons/twitter-icon.png" height="30" alt="Home"></button>
-					<button class="btn"><img src="icons/home-icon.png" height="30" alt=""></button>
-					<button class="btn"><img src="icons/search-icon.png" height="30" alt=""></button>
-					<button class="btn"><img src="icons/notif-icon.png" height="30" alt=""></button>
-					<button class="btn"><img src="icons/message-icon.png" height="30" alt=""></button>
-					<button class="btn"><img src="icons/bookmarks-icon.png" height="30" alt=""></button>
-					<button class="btn"><img src="icons/list-icon.png" height="30" alt=""></button>
-					<button class="btn"><img src="icons/profile-icon.png" height="30" alt=""></button>
-					<button class="btn"><img src="icons/more-icon.png" height="30" alt=""></button>
-					<button class="btn"><img src="icons/write-tweet.png" width="60" height="60" alt=""></button>
-					<button class="btn m-0 pb-3" id="profButton"><img src="icons/mike.jpg" class="rounded-circle" width="40" height="40" alt=""></button>
+			<div class="col-sm-2 col-md-2 col-lg-1 col-xl-2 p-0 position-fixed h-100 d-none d-sm-table justify-content-end" id="sideBar">
+				<div class="side d-flex d-xl-table ml-xl-3 w-xl-100 overflow-auto">
+					<button class="btn mt-3 mb-2">
+						<img src="icons/twitter-icon.png" height="30" alt="Twitter">
+					</button>
+					<button class="btn d-xl-table">
+						<img src="icons/home-icon.png" height="30" alt="">
+						<h1 class="icon d-none d-xl-inline pl-2">Home</h1>
+					</button>
+					<button class="btn d-sm-block d-md-block d-lg-none">
+						<img src="icons/search-icon.png" height="30" alt="">
+					</button>
+					<button class="btn d-none d-lg-block">
+						<img src="icons/explore-icon.png" height="30" alt="">
+						<h1 class="icon d-none d-xl-inline pl-2">Explore</h1>
+					</button>
+					<button class="btn d-xl-table">
+						<img src="icons/notif-icon.png" height="30" alt="">
+						<h1 class="icon d-none d-xl-inline pl-2">Notifications</h1>
+					</button>
+					<button class="btn d-xl-table">
+						<img src="icons/message-icon.png" height="30" alt="">
+						<h1 class="icon d-none d-xl-inline pl-2">Messages</h1>
+					</button>
+					<button class="btn d-xl-table">
+						<img src="icons/bookmarks-icon.png" height="30" alt="">
+						<h1 class="icon d-none d-xl-inline pl-2">Bookmarks</h1>
+					</button>
+					<button class="btn d-xl-table">
+						<img src="icons/list-icon.png" height="30" alt="">
+						<h1 class="icon d-none d-xl-inline pl-2">Lists</h1>
+					</button>
+					<button class="btn d-xl-table">
+						<img src="icons/profile-icon.png" height="30" alt="">
+						<h1 class="icon d-none d-xl-inline pl-2">Profile</h1>
+					</button>
+					<button class="btn d-xl-table">
+						<img src="icons/more-icon.png" height="30" alt="">
+						<h1 class="icon d-none d-xl-inline pl-2">More</h1>
+					</button>
+					<button class="btn d-xl-none">
+						<img src="icons/write-tweet.png" width="60" height="60" alt=""></button>
+					<button type="submit" class="btn btn-sm btn-primary d-none d-xl-table w-75">Tweet</button>
+
+					<div class="d-flex ml-xl-5 justify-content-center align-top" id="profBox">
+						<div class="col-2 p-0">
+		                    <button class="btn m-0 pb-3 d-flex-block">
+							<img src="icons/mike.jpg" class="rounded-circle" width="40" height="40" alt="">
+							</button>
+						</div>
+						<div class="col p-0 pl-4 d-none d-xl-block">
+							<h1 class="name">Michael Gary Scott</h1>
+							<h1 class="username">@TobyHater</h1>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
 			<!-- HOME FEED -->
-			<div class="col col-sm-10 col-md-9 col-lg-7 p-0 mr-md-2 mr-lg-0 border-left border-right" id="middleCol">
+			<div class="col col-sm-10 col-md-9 col-lg-7 col-xl-6 p-0 mr-md-2 mr-lg-0 border-left border-right" id="middleCol">
 				<div class="bar sticky-top px-3 pt-3 bg-white border-bottom">
 					<img src="icons/mike.jpg" class="rounded-circle float-left d-sm-none mr-4 " width="30" height="30" alt="">
 					<h1 class="title d-inline text-black">  Home</h1>
@@ -53,10 +96,37 @@
 							<img src="icons/photo-icon.png" class="mr-2" height="20" alt="">
 							<img src="icons/gif-icon.png" class="mr-2" height="20" alt="">
 							<img src="icons/emoji-icon.png" class="mr-2" height="20" alt="">
-							<button type="submit" class="btn btn-primary btn-sm float-right">Tweet</button>
+							<button type="submit" class="btn btn-sm btn-primary float-right">Tweet</button>
 						</div>
 					</div>
 
+					<div class="row border-bottom px-3 py-2 no-gutters">
+						<div class="col-xs-2">
+							<img src="icons/mike.jpg" class="rounded-circle float-left" width="50" height="50" alt="">
+						</div>
+						<div class="col pl-3">
+							<h1 class="name">Michael Gary Scott</h1>
+							<h1 class="username">@TobyHater • 12h</h1>
+							<img src="icons/arrow-icon.png" class="float-right pt-2" width="12" alt="">
+							<br>
+							<p id="tweet">Again.</p>
+							<img src="icons/I'm dead inside.jpg" width=100% alt="">
+							<div class="row pt-2">
+								<div class="col">
+									<img src="icons/comment-icon.png" height="15" alt="">
+								</div>
+								<div class="col">
+									<img src="icons/rt-icon.png" height="15" alt="">
+								</div>
+								<div class="col">
+									<img src="icons/like-icon.png" height="15" alt="">
+								</div>
+								<div class="col">
+									<img src="icons/share-icon.png" height="15" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<div class="row border-bottom px-3 py-2 no-gutters">
 						<div class="col-xs-2">
@@ -193,47 +263,20 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="row border-bottom px-3 py-2 no-gutters">
-						<div class="col-xs-2">
-							<img src="icons/mike.jpg" class="rounded-circle float-left" width="50" height="50" alt="">
-						</div>
-						<div class="col pl-3">
-							<h1 class="name">Michael Gary Scott</h1>
-							<h1 class="username">@TobyHater • 12h</h1>
-							<img src="icons/arrow-icon.png" class="float-right pt-2" width="12" alt="">
-							<br>
-							<img src="icons/I'm dead inside.jpg" width=100% alt="">
-							<div class="row pt-2">
-								<div class="col">
-									<img src="icons/comment-icon.png" height="15" alt="">
-								</div>
-								<div class="col">
-									<img src="icons/rt-icon.png" height="15" alt="">
-								</div>
-								<div class="col">
-									<img src="icons/like-icon.png" height="15" alt="">
-								</div>
-								<div class="col">
-									<img src="icons/share-icon.png" height="15" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 
 			<!-- TRENDING -->
-			<div class="col-lg-4 p-0 m-0 d-none d-lg-flex d-xl-flex" id="trendingSide">
+			<div class="side col-lg-4 p-0 m-0 d-none d-lg-flex d-xl-flex">
 				<div class="bar sticky-top bg-white">
-					<div class="d-flex w-75 mx-5 mt-2 justify-content-center border" id="search-group">
+					<div class="round-corner d-flex w-75 mx-5 mt-2 justify-content-center border">
 	                    <i class="fa fa-search pt-2 px-3"></i>	
 		                <input class="form-control bg-transparent" type="search" id="search" placeholder="Search Twitter">
 					</div>
 				</div>
-				
+
 				<!-- TRENDS FOR YOU -->
-				<div class="row d-block border-0 bg-light m-3 px-3" id="trendingBox">
+				<div class="round-corner row d-block py-2 border-0 bg-light m-3 px-3">
 					<div class="row d-block border-bottom pl-3 py-2">
 						<h1 class="title">Trends for you</h1>
 						<img src="icons/settings-icon.png" class="float-right pr-3 pt-1" height="25" alt="">
@@ -267,56 +310,66 @@
 				</div>
 
 				<!-- WHO TO FOLLOW -->
-				<div class="row d-block border-0 bg-light m-3 px-3" id="trendingBox">
+				<div class="round-corner row d-block py-2 border-0 bg-light m-3 px-3">
 					<div class="row border-bottom pl-3 py-2">
 						<h1 class="title">Who to follow</h1><br>
 					</div>
 
-					<div class="row d-flex border-bottom pl-3 py-2">
-						<div class="col-2 m-0 p-0">
+					<div class="row d-flex border-bottom pl-3 py-2 no-gutters">
+						<div class="col-xs-2 no-gutters">
 							<img src="icons/mike.jpg" class="rounded-circle float-left" width="50" height="50" alt="">
 						</div>
-						<div class="col">
+						<div class="col pl-3">
 							<h1 class="name">Michael Gary Scott</h1><br>
 							<h1 class="username">@TobyHater</h1>
 						</div>
 					</div>
 				
-					<div class="row d-flex border-bottom pl-3 py-2">
-						<div class="col-2 m-0 p-0">
+					<div class="row d-flex border-bottom pl-3 py-2 no-gutters">
+						<div class="col-xs-2">
 							<img src="icons/mike.jpg" class="rounded-circle float-left" width="50" height="50" alt="">
 						</div>
-						<div class="col">
+						<div class="col pl-3">
 							<h1 class="name">Michael Gary Scott</h1><br>
 							<h1 class="username">@TobyHater</h1>
 						</div>
 					</div>
 
-					<div class="row d-flex border-bottom pl-3 py-2">
-						<div class="col-2 m-0 p-0">
+					<div class="row d-flex border-bottom pl-3 py-2 no-gutters">
+						<div class="col-xs-2">
 							<img src="icons/mike.jpg" class="rounded-circle float-left" width="50" height="50" alt="">
 						</div>
-						<div class="col">
+						<div class="col pl-3">
 							<h1 class="name">Michael Gary Scott</h1><br>
 							<h1 class="username">@TobyHater</h1>
 						</div>
 					</div>
 
-					<div class="row d-flex border-bottom pl-3 py-2">
-						<div class="col-2 m-0 p-0">
+					<div class="row d-flex border-bottom pl-3 py-2 no-gutters">
+						<div class="col-xs-2">
 							<img src="icons/mike.jpg" class="rounded-circle float-left" width="50" height="50" alt="">
 						</div>
-						<div class="col">
+						<div class="col pl-3">
 							<h1 class="name">Michael Gary Scott</h1><br>
 							<h1 class="username">@TobyHater</h1>
 						</div>
 					</div>
 
-					<div class="row d-flex pl-3 py-2">
-						<div class="col-2 m-0 p-0">
+					<div class="row d-flex border-bottom pl-3 py-2 no-gutters">
+						<div class="col-xs-2">
 							<img src="icons/mike.jpg" class="rounded-circle float-left" width="50" height="50" alt="">
 						</div>
-						<div class="col">
+						<div class="col pl-3">
+							<h1 class="name">Michael Gary Scott</h1><br>
+							<h1 class="username">@TobyHater</h1>
+						</div>
+					</div>
+
+					<div class="row d-flex pl-3 py-2 no-gutters">
+						<div class="col-xs-2">
+							<img src="icons/mike.jpg" class="rounded-circle float-left" width="50" height="50" alt="">
+						</div>
+						<div class="col pl-3">
 							<h1 class="name">Michael Gary Scott</h1><br>
 							<h1 class="username">@TobyHater</h1>
 						</div>

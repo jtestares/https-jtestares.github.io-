@@ -10,6 +10,11 @@ p, h1 {
 	font-size: 20px;
 }
 
+.icon { 
+	font-weight: 750;
+	font-size: 18px;
+}
+
 .name {
 	font-weight: 700;
 }
@@ -44,21 +49,21 @@ p, h1 {
 
 .btn {
 	margin: 6px 15px;
-	padding: 0;
+	padding: 0px 2px;
 }
 
-#side, #trendingSide {
+.side {
 	flex-direction: column;
 }
 
-#trendingBox {
+.round-corner {
 	border-radius: 20px;
 }
 
-#profButton {
+#profBox {
 	position: absolute;
 	bottom: 0;
-    right: 25%;
+    right: 50%;
 }
 
 .btn-sm {
@@ -70,10 +75,12 @@ p, h1 {
     font-weight: 600;
 }
 
-#search-group {
-	border-radius: 20px;
+.d-xl-table {
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
-/*Changes margin when media is small*/
+
+/*Changes margins for small medias*/
 @media (min-width: 576px) {
 	#middleCol {
 		margin-left: 16%;
@@ -88,6 +95,7 @@ p, h1 {
 	}
 }
 
+/*Changes layout for large medias*/
 @media (min-width: 992px) {
 	#middleCol {
 		margin-left: 8%;
@@ -99,4 +107,15 @@ p, h1 {
 		right: 0%;
 	}
 
+}
+
+/*Changes layout for extra large medias*/
+@media (min-width: 1200px) {
+	#middleCol {
+		margin-left: 17%;
+	}
+
+	#profBox {
+	    right: 10%;
+	}
 }
