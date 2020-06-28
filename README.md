@@ -1,2 +1,2 @@
-# https-jtestares.github.io-
+# jtestares.github.io
 Twitter Application
